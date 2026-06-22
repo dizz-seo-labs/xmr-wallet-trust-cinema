@@ -76,7 +76,11 @@ The live index check showed Google already knows several URLs, but the snippets 
 
 ## GitHub
 
-A GitHub repo was prepared for `dizz-seo-labs/xmr-wallet-trust-cinema` with source-only files. Build artifacts, `.vercel`, `node_modules`, local QA logs, and screenshots are ignored.
+Created and pushed source repository: https://github.com/dizz-seo-labs/xmr-wallet-trust-cinema
+
+Commit: `78214d1 feat: harden xmrtrust SEO field manual`
+
+Build artifacts, `.vercel`, `node_modules`, local QA logs, and screenshots are ignored.
 
 ## Not done
 
