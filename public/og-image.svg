@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">XMR Wallet Safety Guide</title>
+  <desc id="desc">Dark trust card for independent Cake Wallet and Monero wallet safety guidance.</desc>
+  <defs>
+    <radialGradient id="glow" cx="72%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#2997ff" stop-opacity="0.75"/>
+      <stop offset="45%" stop-color="#0a84ff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2c2c31"/>
+      <stop offset="100%" stop-color="#070708"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#000"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="72" y="72" width="1056" height="486" rx="48" fill="url(#panel)" stroke="rgba(255,255,255,.18)"/>
+  <circle cx="930" cy="182" r="74" fill="none" stroke="#2997ff" stroke-width="16" opacity=".9"/>
+  <path d="M890 184l30 30 62-74" fill="none" stroke="#f5f5f7" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="118" y="165" fill="#86868b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="-.5">Independent wallet safety guide</text>
+  <text x="118" y="270" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="-4">Cake Wallet safety</text>
+  <text x="118" y="354" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="-4">before recovery.</text>
+  <text x="118" y="430" fill="#f5f5f7" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="34" letter-spacing="-1">Downloads • seed phrase • restore height • support scams</text>
+  <text x="118" y="505" fill="#86868b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="24">xmrtrust.uk · No seed input · Not affiliated with Cake Wallet</text>
+</svg>
