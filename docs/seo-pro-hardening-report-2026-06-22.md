@@ -19,7 +19,7 @@ The live index check showed Google already knows several URLs, but the snippets 
 ## Implemented SEO upgrades
 
 - Replaced sponsored CTA destination with the approved new referral link: `https://webcakewallet.com/?ref=Id542`.
-- Removed the old dashboard/cakewallet.cam sponsored destination from public source and built output.
+- Removed the old dashboard-tracking and alternate sponsored-destination links from public source and built output.
 - Added `src/data/seoExtras.js` with editorial policy, source trail, per-page quick answers, stop signals, and deeper practical sections.
 - Expanded all 11 guide routes into stronger field-manual entries with:
   - quick-answer bullets;

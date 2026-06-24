@@ -102,7 +102,9 @@ for (const forbidden of forbiddenClaims) assert.ok(!publicCopy.toLowerCase().inc
 for (const internal of ['Variant C', 'Search architecture', 'SEO work', 'takes more search real estate', 'crawlable substance', 'doorway garbage', 'Maximum intent', 'Google and AI agents', 'one giant soup', 'Intent:', 'XMR Trust Cinema', 'XMR Wallet Trust Cinema']) {
   assert.ok(!publicCopy.includes(internal), `public copy should not expose internal production phrasing: ${internal}`);
 }
-assert.ok(!publicCopy.includes('dizz-seo-lab-dashboard'), 'old dashboard referral link should be removed from public source');
-assert.ok(!publicCopy.includes('cakewallet.cam'), 'old sponsored destination should be removed from public source');
+const oldDashboardReferral = ['dizz-seo-lab', 'dashboard'].join('-');
+const oldSponsoredDestination = ['cakewallet', 'cam'].join('.');
+assert.ok(!publicCopy.includes(oldDashboardReferral), 'old dashboard referral link should be removed from public source');
+assert.ok(!publicCopy.includes(oldSponsoredDestination), 'old sponsored destination should be removed from public source');
 assert.ok(publicCopy.includes('webcakewallet.com/?ref=Id542'), 'new sponsored referral link should be present');
 console.log('xmrtrust SEO Pro content and policy tests passed');
