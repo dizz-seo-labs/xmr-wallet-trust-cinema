@@ -70,5 +70,15 @@ Checked against current Google Search Central guidance:
    - Monero restore height too late
    - Is web Cake Wallet safe? only if it can be written without doorway or impersonation risk.
 
+## Final rollout verification
+- GitHub push completed: `main` at `fc4395c`.
+- Vercel Production deployment completed and aliased to `https://xmrtrust.uk/`.
+- Live root: `https://xmrtrust.uk/` 200 with new referral link present and old exact referral strings absent.
+- Live www: `https://www.xmrtrust.uk/` returns 308 to `https://xmrtrust.uk/`.
+- Non-trailing article URLs return 308 to trailing-slash canonical URLs.
+- Live sitemap has 14 URLs; all returned 200 and canonical tags matched sitemap URLs.
+- Live `/robots.txt`, `/sitemap.xml`, `/sitemap-index.xml`, `/sitemap-0.xml`, `/og-image.svg`, and `/favicon.svg` returned 200.
+- Chrome DevTools: homepage 360px and 1440px no horizontal overflow; Editorial Policy page canonical/JSON-LD valid enough for smoke; console empty.
+
 ## Limitations
 - Search Console actions require GSC property access/tooling. This report documents the exact GSC steps, but they are not executed from this environment unless access is available.
