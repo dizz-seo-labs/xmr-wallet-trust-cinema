@@ -55,6 +55,7 @@ Checked against current Google Search Central guidance:
   - all 11 guide pages have deeper content
   - About and Editorial Policy exist
   - sitemap config uses `https://xmrtrust.uk`
+  - Vercel config redirects `www.xmrtrust.uk` to apex and keeps trailing-slash behavior aligned with sitemap/canonical URLs.
 
 ## Post-deploy SEO plan
 1. Verify old refs are absent on `https://xmrtrust.uk/`, `https://www.xmrtrust.uk/`, build output, sitemap URLs, and static chunks.

@@ -87,6 +87,9 @@ assert.ok(!index.includes('FAQPage'), 'homepage should not mark up deprecated FA
 assert.ok(!slug.includes('FAQPage'), 'article template should not mark up deprecated FAQ rich-result schema');
 assert.ok(config.includes('@astrojs/sitemap'), 'sitemap integration should be configured');
 assert.ok(config.includes('https://xmrtrust.uk'), 'Astro site config should use custom domain');
+const vercelConfig = readFileSync(new URL('../vercel.json', import.meta.url), 'utf8');
+assert.ok(vercelConfig.includes('"trailingSlash": true'), 'Vercel should keep canonical trailing-slash URL behavior');
+assert.ok(vercelConfig.includes('"value": "www.xmrtrust.uk"') && vercelConfig.includes('"destination": "https://xmrtrust.uk/$1"'), 'Vercel should redirect www to apex host');
 const robots = readFileSync(new URL('../public/robots.txt', import.meta.url), 'utf8');
 const sitemapAlias = readFileSync(new URL('../public/sitemap.xml', import.meta.url), 'utf8');
 const manifest = readFileSync(new URL('../public/site.webmanifest', import.meta.url), 'utf8');
